@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Navbar from "./Navbar";
-import LoginSection from "./LoginSection";
+import Navbar from "./app/components/Navbar";
+import LoginSection from "./app/components/LoginSection";
 
 class App extends Component {
   render() {
