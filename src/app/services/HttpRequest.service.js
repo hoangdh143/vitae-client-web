@@ -7,9 +7,9 @@ class HttpRequest {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
         };
-        if (Authorization != null && Authorization.trim() != "") headers.Authorization = Authorization;
+        if (Authorization != null && Authorization.trim() !== "") headers.Authorization = Authorization;
         if (userId != null) headers.userId = userId;
-        if (deviceToken != null && deviceToken.trim() != "") headers.deviceToken = deviceToken;
+        if (deviceToken != null && deviceToken.trim() !== "") headers.deviceToken = deviceToken;
         if (deviceType != null) headers.deviceType = deviceType;
         this.headers = headers;
 
